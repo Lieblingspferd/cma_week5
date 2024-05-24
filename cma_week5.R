@@ -3,39 +3,6 @@
 
 # Annika Hirsch
 
-# Demo / Test
-testfun <- function() {}
-testfun()
-class(testfun)
-
-testfun <- function() {
-  print("this function does nothing")
-}
-
-testfun()
-
-testfun <- function(sometext) {
-  print(sometext)
-}
-
-testfun(sometext = "this function does slightly more, but still not much")
-
-my_age <- function(birthday, output_unit) {
-  difftime(Sys.time(), birthday, units = output_unit)
-}
-
-my_age(birthday = "1997-04-23", output_unit = "days")
-my_age("1997-04-23", "days")
-
-my_age <- function(birthday, output_unit = "days") {
-  difftime(Sys.time(), birthday, units = output_unit)
-}
-
-# if not stated otherwise, our function uses the unit "days"
-my_age("1997-04-23")
-# We can still overwrite units
-my_age("1997-04-23", "hours")
-
 ############### Task 1 #################
 
 # Function which calculates the BMI
